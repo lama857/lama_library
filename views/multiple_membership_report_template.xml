@@ -1,0 +1,63 @@
+<odoo>
+    <template id="report_multiple_memberships_template">
+        <t t-call="web.basic_layout">
+            <div>
+
+                <div>
+                    <h2>
+                        All Memberships Report
+                    </h2>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Member</th>
+                            <th> Registration Date</th>
+                            <th> Expiry Date</th>
+                            <th> Card Number</th>
+                            <th> Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="docs" t-as="doc">
+                            <tr>
+                                <td><t t-esc="doc.partner_id.name"/></td>
+                                <td><t t-esc="doc.registration_date"/></td>
+                                <td><t t-esc="doc.end_date"/></td>
+                                <td><t t-esc="doc.card_id"/></td>
+                                <td>
+                                    <t t-if="doc.state == 'active'">Active</t>
+                                    <t t-elif="doc.state == 'expired'">Expired</t>
+                                    <t t-else=""><t t-esc="doc.state"/></t>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+            </div>
+        </t>
+    </template>
+
+    <!-- Report Action -->
+    <record id="action_report_multiple_memberships" model="ir.actions.report">
+        <field name="name">All Memberships Report</field>
+        <field name="model">library.membership</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">lama_library.report_multiple_memberships_template</field>
+        <field name="report_file">lama_library.report_multiple_memberships_template</field>
+        <field name="print_report_name">'All_Memberships_Report'</field>
+    </record>
+    
+    <record id="action_print_multiple_memberships" model="ir.actions.server">
+        <field name="name">  Print All Membership Reports</field>
+        <field name="model_id" ref="lama_library.model_library_membership"/>
+        <field name="state">code</field>
+        <field name="code">
+           action = env.ref('lama_library.action_report_multiple_memberships').report_action(env['library.membership'].search([]))
+        </field>
+    </record>
+
+
+</odoo>

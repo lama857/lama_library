@@ -1,0 +1,34 @@
+<odoo>
+    <record id="view_partner_form_inherit_library" model="ir.ui.view">
+        <field name="name">res.partner.form.library.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//sheet/notebook" position="inside">
+                <page string=" Library Info">
+                    <group>
+                        <field name="card_id" readonly="1" string=" Membership Card ID"/>
+                        <field name="is_library_member" string=" Is Library Member?"/>
+                    </group>
+                </page>
+            </xpath>
+
+
+
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                <button name="action_view_library_memberships"
+                        type="object"
+                        string=" Memberships"
+                        class="oe_stat_button"
+                        icon="fa-users"
+                        invisible="library_memberships_count == 0"/>
+
+                <field name="library_memberships_count"
+                       widget="statinfo"
+                       string=" Memberships"/>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

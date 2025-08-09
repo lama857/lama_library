@@ -1,0 +1,25 @@
+{
+    'name': 'Library Management',
+    'version': '1.0',
+    'summary': 'Manage books, authors, and borrowing in a library',
+    'author': 'LAMA',
+    'category': 'Tools',
+    'license': 'LGPL-3',
+    'depends': ['base', 'contacts', 'account', 'product'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/book_views.xml',
+        'views/author_views.xml',
+        'views/borrowing_views.xml',
+        'views/library_actions.xml',
+        'views/library_menu.xml',
+        'views/membership_views.xml',
+        'views/product_views.xml',
+        'views/res_partner_views.xml',
+        'views/single_membership_report_template.xml',
+        'views/multiple_membership_report_template.xml',
+    ],
+    'installable': True,
+    'application': True,
+}
+

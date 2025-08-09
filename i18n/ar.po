@@ -1,0 +1,421 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* lama_library
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-09 11:24+0000\n"
+"PO-Revision-Date: 2025-08-09 11:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: lama_library
+#: model:ir.actions.server,name:lama_library.action_print_multiple_memberships
+msgid "  Print All Membership Reports"
+msgstr "طباعة جميع تقارير العضوية"
+
+#. module: lama_library
+#: model:ir.actions.act_window,name:lama_library.action_authors
+msgid " Authors"
+msgstr "المؤلفون"
+
+#. module: lama_library
+#: model:ir.actions.act_window,name:lama_library.action_books
+msgid " Books"
+msgstr "الكتب"
+
+#. module: lama_library
+#: model:ir.actions.act_window,name:lama_library.action_borrowings
+msgid " Borrowings"
+msgstr "عمليات الإعارة"
+
+#. module: lama_library
+#: model:ir.actions.act_window,name:lama_library.action_library_members
+msgid " Library Members"
+msgstr "أعضاء المكتبة"
+
+#. module: lama_library
+#: model:ir.actions.act_window,name:lama_library.action_library_invoices
+msgid " Library Membership Invoices"
+msgstr "فواتير عضوية المكتبة"
+
+#. module: lama_library
+#: model:ir.actions.act_window,name:lama_library.action_membership_invoices
+msgid " Membership Invoices"
+msgstr "فواتير العضوية"
+
+#. module: lama_library
+#: model:ir.actions.act_window,name:lama_library.action_library_membership
+#: model:ir.actions.act_window,name:lama_library.action_library_membership_requests
+msgid " Membership Requests"
+msgstr "طلبات العضوية"
+
+#. module: lama_library
+#: model:ir.actions.report,print_report_name:lama_library.action_report_multiple_memberships
+msgid "'All_Memberships_Report'"
+msgstr "'تقرير_كل_العضويات'"
+
+#. module: lama_library
+#: model:ir.actions.report,print_report_name:lama_library.action_report_single_memberships
+msgid "'Membership Report - %s' % (object.partner_id.name)"
+msgstr "'تقرير العضوية - %s' % (object.partner_id.name)"
+
+#. module: lama_library
+#: model:ir.model.fields.selection,name:lama_library.selection__library_membership__state__active
+#: model_terms:ir.ui.view,arch_db:lama_library.report_multiple_memberships_template
+#: model_terms:ir.ui.view,arch_db:lama_library.report_single_membership_template
+msgid "Active"
+msgstr "نشط"
+
+#. module: lama_library
+#: model:ir.actions.report,name:lama_library.action_report_multiple_memberships
+#: model_terms:ir.ui.view,arch_db:lama_library.report_multiple_memberships_template
+msgid "All Memberships Report"
+msgstr "تقرير كل العضويات"
+
+#. module: lama_library
+#: model:ir.model,name:lama_library.model_library_author
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_book
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_book
+msgid "Author"
+msgstr "المؤلف"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_author
+msgid "Author Form"
+msgstr "نموذج المؤلف"
+
+#. module: lama_library
+#: model:ir.ui.menu,name:lama_library.menu_library_authors
+msgid "Authors"
+msgstr "المؤلفون"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_author
+msgid "Authors List"
+msgstr "قائمة المؤلفين"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_book
+msgid "Available"
+msgstr "متاح"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_book
+msgid "Available?"
+msgstr "متاح؟"
+
+#. module: lama_library
+#: model:ir.model,name:lama_library.model_library_book
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_borrowing
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_borrowing
+msgid "Book"
+msgstr "كتاب"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_book
+msgid "Book Form"
+msgstr "نموذج الكتاب"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_book
+msgid "Book List"
+msgstr "قائمة الكتب"
+
+#. module: lama_library
+#: model:ir.ui.menu,name:lama_library.menu_books_in_accounting
+#: model:ir.ui.menu,name:lama_library.menu_library_books
+msgid "Books"
+msgstr "الكتب"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_author
+msgid "Books by Author"
+msgstr "كتب حسب المؤلف"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_borrowing
+msgid "Borrow"
+msgstr "استعارة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_borrowing
+msgid "Borrow Date"
+msgstr "تاريخ الإعارة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_borrowing
+msgid "Borrower"
+msgstr "المستعير"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_borrowing
+msgid "Borrowing Form"
+msgstr "نموذج الإعارة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_borrowing
+msgid "Borrowing List"
+msgstr "قائمة الإعارات"
+
+#. module: lama_library
+#: model:ir.model,name:lama_library.model_library_borrowing
+msgid "Borrowing Record"
+msgstr "سجل الإعارة"
+
+#. module: lama_library
+#: model:ir.ui.menu,name:lama_library.menu_library_borrowings
+msgid "Borrowing Records"
+msgstr "سجلات الإعارة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_single_membership_template
+msgid "Card ID"
+msgstr "رقم البطاقة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_multiple_memberships_template
+msgid "Card Number"
+msgstr "رقم البطاقة"
+
+#. module: lama_library
+#: model:ir.model.fields.selection,name:lama_library.selection__library_membership__payment_terms__cash
+msgid "Cash"
+msgstr "نقدي"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_library_membership_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: lama_library
+#: model:ir.model.fields.selection,name:lama_library.selection__library_membership__state__confirmed
+msgid "Confirmed"
+msgstr "تم التأكيد"
+
+#. module: lama_library
+#: model:ir.model,name:lama_library.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: lama_library
+#: model_terms:ir.actions.act_window,help:lama_library.action_library_membership_requests
+msgid "Create a new membership request"
+msgstr "إنشاء طلب عضوية جديد"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_book
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_book
+msgid "Description"
+msgstr "الوصف"
+
+#. module: lama_library
+#: model:ir.model.fields.selection,name:lama_library.selection__library_membership__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_author
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_multiple_memberships_template
+#: model_terms:ir.ui.view,arch_db:lama_library.report_single_membership_template
+msgid "Expired"
+msgstr "منتهي"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_multiple_memberships_template
+#: model_terms:ir.ui.view,arch_db:lama_library.report_single_membership_template
+msgid "Expiry Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: lama_library
+#: model:ir.ui.menu,name:lama_library.menu_library_invoices
+#: model:ir.ui.menu,name:lama_library.menu_membership_invoices
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_partner_form_inherit_library
+msgid "Is Library Member?"
+msgstr "هل هو عضو في المكتبة؟"
+
+#. module: lama_library
+#: model:ir.ui.menu,name:lama_library.menu_library_root
+#: model:ir.ui.menu,name:lama_library.menu_library_under_account
+msgid "Library"
+msgstr "المكتبة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_partner_form_inherit_library
+msgid "Library Info"
+msgstr "معلومات المكتبة"
+
+#. module: lama_library
+#: model:ir.model,name:lama_library.model_library_membership
+msgid "Library Membership Request"
+msgstr "طلب عضوية المكتبة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_library_membership_form
+msgid "Mark as Paid"
+msgstr "وضع كمدفوع"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_borrowing
+msgid "Mark as Returned"
+msgstr "وضع كمعاد"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_multiple_memberships_template
+msgid "Member"
+msgstr "عضو"
+
+#. module: lama_library
+#: model:ir.ui.menu,name:lama_library.menu_library_members
+#: model:ir.ui.menu,name:lama_library.menu_members_in_accounting
+msgid "Members"
+msgstr "الأعضاء"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_partner_form_inherit_library
+msgid "Membership Card ID"
+msgstr "رقم بطاقة العضوية"
+
+#. module: lama_library
+#: model:ir.model,name:lama_library.model_library_membership_line
+msgid "Membership Line"
+msgstr "بند العضوية"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_library_membership_form
+msgid "Membership Lines"
+msgstr "بنود العضوية"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_product_form_inherit_library
+msgid "Membership Product"
+msgstr "منتج العضوية"
+
+#. module: lama_library
+#: model:ir.actions.report,name:lama_library.action_report_single_memberships
+#: model_terms:ir.ui.view,arch_db:lama_library.report_single_membership_template
+msgid "Membership Report"
+msgstr "تقرير العضوية"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_library_membership_form
+msgid "Membership Request"
+msgstr "طلب العضوية"
+
+#. module: lama_library
+#: model:ir.ui.menu,name:lama_library.menu_library_membership_requests
+#: model_terms:ir.ui.view,arch_db:lama_library.view_library_membership_list
+msgid "Membership Requests"
+msgstr "طلبات العضوية"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_single_membership_template
+msgid "Membership Status"
+msgstr "حالة العضوية"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_partner_form_inherit_library
+msgid "Memberships"
+msgstr "العضويات"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_single_membership_template
+msgid "Member’s Name"
+msgstr "اسم العضو"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_author
+msgid "Name"
+msgstr "الاسم"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.library_borrowing_search
+msgid "Not Returned"
+msgstr "غير معاد"
+
+#. module: lama_library
+#: model:ir.model,name:lama_library.model_product_template
+msgid "Product"
+msgstr "المنتج"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_book
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_book
+msgid "Publication date"
+msgstr "تاريخ النشر"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_multiple_memberships_template
+#: model_terms:ir.ui.view,arch_db:lama_library.report_single_membership_template
+msgid "Registration Date"
+msgstr "تاريخ التسجيل"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_borrowing
+msgid "Return"
+msgstr "إعادة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_borrowing
+msgid "Return Date"
+msgstr "تاريخ الإعادة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_borrowing
+msgid "Returned"
+msgstr "تم الإعادة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_borrowing
+msgid "Returned?"
+msgstr "تم الإعادة؟"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.report_multiple_memberships_template
+msgid "Status"
+msgstr "الحالة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_library_membership_form
+msgid "View Invoice"
+msgstr "عرض الفاتورة"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_borrowing
+msgid "borrower"
+msgstr "المستعير"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_author
+msgid "email"
+msgstr "البريد الإلكتروني"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_library_membership_form
+msgid "int Membership Report"
+msgstr "تقرير العضوية الداخلي"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_book
+#: model_terms:ir.ui.view,arch_db:lama_library.view_list_book
+msgid "name"
+msgstr "الاسم"
+
+#. module: lama_library
+#: model_terms:ir.ui.view,arch_db:lama_library.view_form_author
+msgid "or Name"
+msgstr "أو الاسم"

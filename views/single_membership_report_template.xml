@@ -1,0 +1,50 @@
+<odoo>
+  <template id="report_single_membership_template">
+    <t t-call="web.basic_layout">
+        <t t-foreach="docs" t-as="doc">
+            <div class="page">
+                <h2>
+                    Membership Report
+                </h2>
+                <table>
+                    <tr>
+                        <td>Member’s Name</td>
+                        <td><t t-esc="doc.partner_id.name"/></td>
+                    </tr>
+                    <tr>
+                        <td>Registration Date</td>
+                        <td><t t-esc="doc.registration_date"/></td>
+                    </tr>
+                    <tr>
+                        <td>Expiry Date</td>
+                        <td><t t-esc="doc.end_date"/></td>
+                    </tr>
+                    <tr>
+                        <td>Card ID</td>
+                        <td><t t-esc="doc.card_id"/></td>
+                    </tr>
+                    <tr>
+                        <td>Membership Status</td>
+                        <td>
+                            <t t-if="doc.state == 'active'">Active</t>
+                            <t t-elif="doc.state == 'expired'">Expired</t>
+                            <t t-else=""><t t-esc="doc.state"/></t>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </t>
+    </t>
+</template>
+
+
+<record id="action_report_single_memberships" model="ir.actions.report">
+    <field name="name">Membership Report</field>
+    <field name="model">library.membership</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">lama_library.report_single_membership_template</field>
+    <field name="report_file">lama_library.report_single_membership_template</field>
+    <field name="print_report_name">'Membership Report - %s' % (object.partner_id.name)</field>
+</record>
+
+</odoo> 

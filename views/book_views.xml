@@ -1,0 +1,46 @@
+<odoo>
+    <!-- FORM VIEW -->
+    <record id="view_form_book" model="ir.ui.view">
+        <field name="name">library.book.form</field>
+        <field name="model">library.book</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string=" Book Form">
+                <sheet>
+                    <group>
+                        <field name="name" string=" name"/>
+                        <field name="author_id" string=" Author"/>
+                        <field name="description" string=" Description"/>
+                        <field name="publish_date" string="Publication date"/>
+                        <field name="is_available" string="Available?"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- LIST VIEW -->
+    <record id="view_list_book" model="ir.ui.view">
+        <field name="name">library.book.list</field>
+        <field name="model">library.book</field>
+        <field name="type">list</field>
+        <field name="arch" type="xml">
+            <list string=" Book List">
+                <field name="name" string=" name"/>
+                <field name="author_id" string=" Author"/>
+                <field name="description" string=" Description"/>
+                <field name="publish_date" string="Publication date"/>
+                <field name="is_available" string=" Available"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+    <record id="action_books" model="ir.actions.act_window">
+        <field name="name"> Books</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+   
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    
+    <!-- FORM VIEW -->
+    <record id="view_form_borrowing" model="ir.ui.view">
+        <field name="name">library.borrowing.form</field>
+        <field name="model">library.borrowing</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string=" Borrowing Form">
+                <header>
+                    <button name="action_mark_returned"
+                        type="object"
+                        string=" Mark as Returned"
+                        class="btn-primary"
+                        invisible="returned == True"/>
+
+
+                </header>
+                <sheet>
+                    <group>
+                        <field name="book_id" string=" Book"/>
+                        <field name="borrower_id" string=" Borrower"/>
+                        <field name="card_id" readonly="1"/>
+                        <field name="borrow_date" string=" Borrow Date"/>
+                        <field name="return_date" string=" Return Date"/>
+                        <field name="returned" string=" Returned?"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- LIST VIEW -->
+    <record id="view_list_borrowing" model="ir.ui.view">
+        <field name="name">library.borrowing.list</field>
+        <field name="model">library.borrowing</field>
+        <field name="type">list</field>
+        <field name="arch" type="xml">
+            <list string=" Borrowing List">
+                <field name="book_id" string=" Book"/>
+                <field name="borrower_id" string=" borrower"/>
+                <field name="borrow_date" string=" Borrow"/>
+                <field name="return_date" string=" Return"/>
+                <field name="returned" string=" Returned"/>
+
+            </list>
+        </field> 
+        </record>
+
+ <!-- SEARCH VIEW -->
+    <record id="library_borrowing_search" model="ir.ui.view">
+        <field name="name">library.borrowing.search</field>
+        <field name="model">library.borrowing</field>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="book_id"/>
+                <field name="borrower_id"/>
+                <filter name="not_returned" string=" Not Returned" domain="[('returned','=',False)]"/>
+            </search>
+        </field>
+    </record>
+  
+
+
+    <!-- ACTION -->
+    <record id="action_borrowings" model="ir.actions.act_window">
+        <field name="name"> Borrowings</field>
+        <field name="res_model">library.borrowing</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="library_borrowing_search"/>
+        <field name="domain">[]</field>
+    </record>
+
+   
+</odoo>

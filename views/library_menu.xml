@@ -1,0 +1,42 @@
+<odoo>
+    <!-- Main Library Menu -->
+    <menuitem id="menu_library_root" name="Library"/>
+
+    <!-- Books (Parent Menu) -->
+    <menuitem id="menu_library_books"
+              name="Books"
+              parent="menu_library_root"/>
+
+    <menuitem id="submenu_books_list"
+              name="Books"
+              parent="menu_library_books"
+              action="action_books"/>
+
+    <menuitem id="menu_library_members"
+              name="Members"
+              parent="menu_library_books"
+              action="action_library_members"/>
+
+    <menuitem id="menu_library_membership_requests"
+              name="Membership Requests"
+              parent="menu_library_books"
+              action="action_library_membership"/>
+
+    <menuitem id="menu_library_invoices"
+              name="Invoices"
+              parent="menu_library_books"
+              action="action_library_invoices"/>
+
+    <!-- Authors (Separate Menu) -->
+    <menuitem id="menu_library_authors"
+              name="Authors"
+              parent="menu_library_root"
+              action="action_authors"/>
+
+    <!-- Borrowing Records (Separate Menu) -->
+    <menuitem id="menu_library_borrowings"
+              name="Borrowing Records"
+              parent="menu_library_root"
+              action="action_borrowings"/>
+</odoo>
+
